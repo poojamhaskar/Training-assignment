@@ -1,0 +1,129 @@
+1. Write a program to display the multiplication table from 5 to 10.
+   Ex -  5   6  .....10
+           ..............
+           ..............
+           ..............
+           50 60 ....100
+
+
+#include<stdio.h>
+ #include<conio.h>
+
+ void main()
+ {
+
+     for(int i=1;i<=10;i++)
+     {
+         for(int j=5;j<=10;j++)
+         {
+            printf("%d  ",i*j);
+         }
+        printf("\n");
+
+     }
+
+ }
+
+
+2. Write a program to print the following pattern
+  Ex -
+            * * * * * 
+            * * * * 
+            * * * 
+            * * 
+            *
+#include<conio.h>
+   #include<stdio.h>
+   void main()
+   {
+       for(int i=1;i<=5;i++)
+       {
+           for(int j=i;j<=5;j++)
+           {
+               printf("*");
+           }
+        printf("\n");
+       }
+
+   }
+
+
+3.Write a program to print the average of given number of array
+   int number[]={2,7,1,4,9,0,1,8}
+   int totalnumber[]=8; //Already the know the length of array
+
+#include<stdio.h>
+#include<conio.h>
+
+ void main()
+ {
+
+     int a[40],size,i,j,sum=0,avg;
+
+     printf("enter the size of ary");
+     scanf("%d",&size);
+
+     printf("enter the elements of ary");
+     for(i=0;i<size;i++)
+     {
+         scanf("%d",&a[i]);
+         sum=sum+a[i];
+     }
+     avg=sum/size;
+
+     printf("avg of ary is %d ",avg);
+
+ }
+
+
+4. Accept the 3 numbers from user and print the maximum number from them.
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+ {
+     int a,b,c;
+     printf("enter three numbers\n");
+     scanf("%d%d%d",&a,&b,&c);
+     if(a>b && a>c)
+     {
+         printf("\n%d  is max",a);
+
+     }
+     else if(b>a && b>c)
+     {
+         printf("\n%d  is max",b);
+
+     }
+     else
+     {
+
+         printf("\n%d  is greater",c);
+     }
+
+
+}
+
+
+5.Write a program for fibonacci series . 
+Ex - 0 1 1 2 3 5 8 13
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+ {
+     int t1=0,t2=1,next,lim;
+
+       printf("enter the max limit of series");
+       scanf("%d",&lim);
+
+        for(int i=0;i<lim;i++)
+        {
+             printf(" %d  ",t1);
+             next=t1+t2;
+             t1=t2;
+             t2=next;
+        }
+
+ }
