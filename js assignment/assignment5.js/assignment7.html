@@ -1,0 +1,42 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment7</title>
+    <script>
+        function area()
+{
+    var len1=parseFloat(document.getElementById("num1").value);
+    var len2=parseFloat(document.getElementById("num2").value);
+    var len3=parseFloat(document.getElementById("num3").value);
+    var add=len1+len2+len3;
+    var p=add/2;
+    var areaa=Math.sqrt(p*((p-len1)*(p-len2)*(p-len3)));
+   document.write("Area of traingle is  : : "+areaa);
+   
+}
+    </script>
+
+</head>
+<body>
+    
+    <h3>Enter sides of triangle</h3>
+    <form>
+        <pre>
+  Enter 1st side length : <input type="number" id="num1"> <br>
+
+  Enter 2nd side length : <input type="number" id="num2"><br>
+  
+  Enter 3rd side length : <input type="number" id="num3"><br>
+  
+
+                 <input type="button" value="Get area" onclick="area()">
+
+
+</pre>
+        </form>
+
+
+</body>
+</html></html>

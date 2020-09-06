@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment5</title>
+    
+    <script>
+	function upper() 
+{
+    let str = document.getElementById("ip").value;
+    let output = "";
+    for (let i = 0; i < str.length; i++) {
+      if (i == 0 || str[i - 1] == " ")
+       {
+    output=output+ str[i].toUpperCase();
+      }
+       else 
+      {
+        output=output+ str[i].toLowerCase();
+      }
+    }
+    document.getElementById("result").innerHTML = output;
+  }	
+	</script>
+
+  </head>
+  <body>
+    <pre>
+      <h3>Enter the string to get output</h3></br>
+      <input id="ip" type="text" placeholder="Enter string"/><br/>
+      <button type="button" onclick="upper()">Enter</button>
+      <h2 id="result"></h2>
+    </pre>
+
+     </body>
+</html>

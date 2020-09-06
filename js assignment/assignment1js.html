@@ -1,0 +1,56 @@
+﻿<DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="assignment1.js"></script>
+<script>
+function display_alert()
+{
+var data=" ";
+let t1=document.getElementById("fn").value;
+data=data+t1+" ";
+let t2=document.getElementById("ln").value;
+data=data+t2+" ";
+let t3=document.getElementById("ds").value;
+data=data+t3+" ";
+let t4=document.getElementById("mn").value;
+data=data+t4+" ";
+let t5=document.getElementById("ad").value;
+data=data+t5+" ";
+let t6=document.getElementById("ct").value;
+data=data+t6+" ";
+let t7=document.getElementById("st").value;
+data=data+t7+" ";
+let t8=document.getElementById("pc").value;
+data=data+t8+" ";
+alert(data);
+}
+</script>
+</head>
+<body>
+<h1>Student information</h1>
+<table border=0>
+<form name="form" style="text-align: center;">
+<table>
+<tr><td>Full name:</td>
+<td><input type="text" name="t1" id="fn"></td></tr>
+<tr><td>Last name:</td>
+<td><input type="text" name="t2" id="ln"></td></tr>
+<tr><td>Designation:</td>
+<td><input type="text" name="t3" id="ds"></td></tr>
+<tr><td>Mobile number:</td>
+<td><input type="text" name="t4" id="mn"></td></tr>
+<tr><td>Address:</td>
+<td><input type="text" name="t5" id="ad"></td></tr>
+<tr><td>City:</td>
+<td><input type="text" name="t6" id="ct"></td></tr>
+<tr><td>State:</td>
+<td><input type="text" name="t7" id="st"></td></tr>
+<tr><td>Pincode:</td>
+<td><input type="text" name="t8" id="pc"></td></tr>
+<tr>
+<td></td>
+<td><input type="Submit" onclick="display_alert()" value="Submit">
+<input type="Reset" value="reset" name="Reset"></td></tr></table>
+</form>
+</body>
+</html>

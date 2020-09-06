@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment11</title>
+    
+    <script>
+        function validate() {
+    let brand = document.getElementById("mbbrand").value;
+    let model = document.getElementById("mbmodel").value;
+    let price = Number.parseFloat(document.getElementById("amount").value);
+    console.log(brand, model, price);
+    if ( Number.isNaN(price) || !brand || !model ) 
+    {
+      window.alert("Please enter valid input !!");
+      return;
+    }
+    document.getElementById("result").innerHTML += `Model name : ${model} <br/>`;
+    document.getElementById("result").innerHTML += `Brand name : ${brand} <br/>`;
+   
+    document.getElementById("result").innerHTML += `Price is : ${price}`;
+  }
+    </script>
+  </head>
+  <body>
+      <h1 style=font-size: 15px;">Enter Mobile details</h1>
+      <table>
+          <td><label for="model">Model : </label></td>
+          <td><input type="text" id="mbmodel" placeholder="Enter model name" /></td>
+        </tr>
+        <tr>
+            <td><label for="brand">Brand : </label></td>
+            <td>
+              <input type="text" id="mbbrand" placeholder="Enter brand name" />
+            </td>
+          </tr>
+          <tr>
+         
+
+        <tr>
+          <td><label for="price">Price : </label></td>
+          <td>
+            <input type="text" id="amount" placeholder="Enter the price" />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <button type="button" onclick="validate()">Validate</button>
+      <h2 id="result"></h2>
+    
+    
+  </body>
+</html>

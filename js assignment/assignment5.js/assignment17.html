@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment17</title>
+    <script>
+    function disres() {
+        let marks = [65, 76, 92, 91, 54, 37, 67, 69, 88, 43];
+        let sum = 0;
+        let avg = 0;
+        for (mark of marks) {
+          sum += mark;
+        }
+        avg = sum / 10;
+        let msg = `Given marks are [${marks}]`;
+        let ans = `Average is ${avg}`;
+        document.getElementById("msg").innerHTML = msg;
+        document.getElementById("result").innerHTML = ans;
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button id="subm" type="button" onclick="disres()">Result</button>
+      <p id="msg"></p>
+      <h2 id="result"></h2>
+    </div>
+  </body>
+</html>
+  

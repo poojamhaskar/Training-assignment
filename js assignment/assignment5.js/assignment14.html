@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Question 14</title>
+    <script>
+    function donate() {
+  let inp = document.createElement("input");
+  inp.id = "inp";
+  inp.type = "text";
+  inp.placeholder = "Enter donations";
+  document.getElementById("inpText").appendChild(inp);
+
+  let btn1 = document.createElement("button");
+  btn1.id = "donate";
+  btn1.type = "button";
+  btn1.innerHTML = "Donate";
+  btn1.addEventListener("click", submit);
+
+  let btn2 = document.createElement("button");
+  btn2.id = "cancel";
+  btn2.type = "clear";
+  btn2.innerHTML = "Cancel";
+  document.getElementById("donation").appendChild(btn1);
+  document.getElementById("donation").appendChild(btn2);
+  document.getElementById("subm").remove();
+}
+function submit() {
+  let value = Number.parseInt(document.getElementById("inp").value);
+  document.getElementById("inp").value = "";
+  if (Number.isNaN(value)) {
+    window.alert("Please enter valid donations");
+    return;
+  }
+  window.alert(`Your donation is ${value}, Thank you!! `);
+}
+</script>
+  </head>
+  <body>
+    <div class="main">
+      <p id="q">
+        
+      </p>
+      <br />
+      <div id="inpText"></div>
+      <div id="donation"></div>
+
+      <button id="subm" type="button" onclick="donate()">
+        Click to donate
+      </button>
+      <h2 id="result"></h2>
+    </div>
+  </body>
+</html>

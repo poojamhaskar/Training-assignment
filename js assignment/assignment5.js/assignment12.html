@@ -1,0 +1,42 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment12</title>
+    <script>
+        function m1()
+{
+    var num1=parseFloat(prompt("enter 1st number"));
+    
+    m2(num1);
+}
+function m2(n)
+{
+    var m=n;
+    var num2=parseFloat(prompt("enter 2nd number"));
+    add(m,num2);
+}
+
+function add(x,y)
+{
+    var sum=x+y;
+    
+    document.write("addition is  :: "+sum);
+}
+
+    </script>
+</head>
+<body>
+     
+    <form>
+
+        <pre>
+         <input type="button" value="click here" onclick="m1()">
+      </pre>
+    </form>
+
+
+
+</body>
+</html></html>

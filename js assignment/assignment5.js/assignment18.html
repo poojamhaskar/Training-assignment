@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment18</title>
+    <script>
+        function disres() {
+  let output = "";
+  for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+      output += "* ";
+    }
+    output += "<br/>";
+  }
+  document.getElementById("result").innerHTML = output;
+  console.log(output);
+}
+    </script>
+  </head
+  <body>
+    <div>
+      <button id="subm" type="button" onclick="disres()">Result</button>
+      <h2 id="result"></h2>
+      </div>
+  </body>
+</html>

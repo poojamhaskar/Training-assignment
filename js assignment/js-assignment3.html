@@ -1,0 +1,48 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meata charset=utf-8 />
+            <title>Arithmatic js assignments</title>
+            <script>
+                function additionBy()
+                {
+                    number1=parseFloat(document.getElementById("num1").value);
+                    number2=parseFloat(document.getElementById("num2").value);
+                    result=number1+number2;
+                    document.getElementById("result").value = result;
+                }
+                function substractBy()
+                {
+                    number1=parseFloat(document.getElementById("num1").value);
+                    number2=parseFloat(document.getElementById("num2").value);
+                    result=number1-number2;
+                    document.getElementById("result").value = result;
+                }
+                function multiplyBy()
+                {
+                    number1=parseFloat(document.getElementById("num1").value);
+                    number2=parseFloat(document.getElementById("num2").value);
+                    result=number1*number2;
+                    document.getElementById("result").value = result;
+                }
+                function divideBy()
+                {
+                    number1=parseFloat(document.getElementById("num1").value);
+                    number2=parseFloat(document.getElementById("num2").value);
+                    result=number1/number2;
+                    document.getElementById("result").value = result;
+                }
+             </script>
+           </head>
+           <body>
+               <form name="form" style="text-align: center;">
+                1 Number :  <input type="text" name="num1" id="num1"><br><br>
+                2 Number :  <input type="text" name="num2" id="num2"><br><br>
+                Result   :  <input type="text" name="result" id="result"><br><br>
+                <input type="button"  value="Addition" id="add" onclick="additionBy()">  
+                <input  type="button" value="Substraction" id="sub" onclick="substractBy()">
+                <input type="button"  value="Multiplication" id="mul" onclick="multiplyBy()"> 
+                <input type="button"  value="Division" id="div" onclick="divideBy()">
+            </form>
+        </body>
+    </html>
