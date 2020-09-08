@@ -1,0 +1,43 @@
+.header1 {
+    height: 15vh;
+    border: 5px solid red;
+    text-align: center;
+    margin-top:1.2%;
+  }
+  .header1 h1 {
+    font-size: 40px;
+  
+  }
+  .footer1 {
+    height: 15vh;
+    border: 5px solid black;
+    text-align: center;
+    margin-top:5%;
+  }
+  .footer1 h1 {
+    font-size: 40px;
+     }
+  .Formreact{
+    text-align: center;
+    margin-top:4%;
+    
+  }
+
+  .line {
+      font-size:30px;
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+  }
+  .btn1{
+  border-radius: 5px;
+  }
+
+  .btn2{
+    border-radius: 5px;
+  }
+
+
+
+
+
