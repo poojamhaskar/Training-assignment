@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment1</title>
+    <script>
+        function ans() {
+  let num1 = Number.parseFloat(document.getElementById("num1").value);
+  let num2 = Number.parseFloat(document.getElementById("num2").value);
+  if (Number.isNaN(num1) || Number.isNaN(num2)) {
+    alert("Please enter valid input");
+    return;
+  }
+  
+  if (num1 == num2) {
+    document.getElementById("result").innerHTML = `Both numbers are same`;
+    return;
+  }
+
+  let bigNum = num1 > num2 ? num1 : num2;
+  document.getElementById("result").innerHTML = `Greater number is : ${bigNum}`;
+}
+
+    </script>
+  </head>
+  <body>
+      <input id="num1" type="text" placeholder="Enter 1st number" /><br />
+      <input id="num2" type="text" placeholder="Enter 2nd number" />
+      <br />
+      <button id="submit" type="button" onclick="ans()">Larger No</button>
+      <p id="msg"></p>
+      <h2 id="result"></h2>
+  </body>
+</html>
+

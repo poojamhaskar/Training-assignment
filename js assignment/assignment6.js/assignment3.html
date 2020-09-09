@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment3</title>
+    <script>
+        function sortNums() {
+  let num1 = Number.parseFloat(document.getElementById("num1").value);
+  let num2 = Number.parseFloat(document.getElementById("num2").value);
+  let num3 = Number.parseFloat(document.getElementById("num3").value);
+  let numArray = [num1, num2, num3];
+  let temp = 0;
+  //   Validation
+  if (Number.isNaN(num1) || Number.isNaN(num2) || Number.isNaN(num3)) {
+    alert("Please enter valid input");
+    return;
+  }
+  for (let i = 0; i < numArray.length; i++) {
+    for (let j = i + 1; j < numArray.length; j++) {
+      if (numArray[i] > numArray[j]) {
+        temp = numArray[i];
+        numArray[i] = numArray[j];
+        numArray[j] = temp;
+      }
+    }
+  }
+  alert(`Sorted three numbers are ${numArray}`);
+  location.reload();
+  return;
+}
+   </script>
+  </head>
+  <body>
+      <input id="num1" type="text" placeholder="Enter 1st number" /><br />
+
+      <input id="num2" type="text" placeholder="Enter 2nd number" /><br />
+
+      <input id="num3" type="text" placeholder="Enter 3rd number" /><br />
+
+      <button id="submit" type="button" onclick="sortNums()">Sort numbers</button>
+      <p id="msg"></p>
+      <h2 id="result"></h2>
+  </body>
+</html>

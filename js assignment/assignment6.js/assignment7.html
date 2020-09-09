@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment7</title>
+    <script>
+function chkGCD() {
+    var a = 65748; 
+var b = 5463;  
+var gcd;
+while (a!=b)
+{
+	if (a>b)
+	{
+		a = a -b;
+	}
+	else
+	{
+		b = b - a;
+	}
+}
+gcd = a;
+  document.getElementById("msg").innerHTML = (gcd);
+}
+  </script>
+  </head>
+  <body>
+      <input type="text" id="num1" placeholder="Enter 1st number" /><br />
+      <input type="text" id="num2" placeholder="Enter 2nd number" /><br />
+      <button id="submit" type="button" onclick="chkGCD()">Result</button>
+      <p id="msg"></p>
+    </body>
+</html>

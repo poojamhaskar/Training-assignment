@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment5</title>
+    <script>
+function calc() {
+  for (let x = 0; x < 16; x++) {
+    if (x % 2 == 0) {
+      document.getElementById("res").innerHTML += (x + " is even </br>"); 
+    } else {
+      document.getElementById("res").innerHTML +=  (x + " is odd </br>");
+    }
+  }
+}
+
+    </script>
+  </head>
+  <body>
+      <button id="subm" type="button" onclick="calc()">Result</button>
+      <p id="res"></p>
+      
+  </body>
+</html>

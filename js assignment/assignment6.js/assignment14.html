@@ -1,0 +1,46 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment14</title>
+    <script>
+        function go() {
+            var num = document.getElementById("num").value;
+            //  var str=num.toString();
+            //  document.write(str.length);
+            var op = "";
+            for (var i = 0; i < num.length; i++) {
+                var s1 = Number.parseFloat(num[i]);
+                var s2 = Number.parseFloat(num[i + 1]);
+                if (s1 % 2 == 0 && s2 % 2 == 0) {
+                    op = op + s1 + '-';
+                }
+                else {
+                    op = op + s1;
+                }
+            }
+            document.getElementById("result").value = op;
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <form>
+        <pre>
+<b>Enter the Number</b> : <input type="text" id="num"><input type="button" value="Submit" onclick="go()">
+
+<b>Result</b> : <input type="text" id="result">   
+
+</pre>
+    </form>
+
+
+</body>
+
+</html>

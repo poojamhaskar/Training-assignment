@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment16</title>
+    <script>
+function mostFrequent() {
+var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var mf = 1;
+var m = 0;
+var item;
+for (var i=0; i<arr1.length; i++)
+{
+        for (var j=i; j<arr1.length; j++)
+        {
+                if (arr1[i] == arr1[j])
+                 m++;
+                if (mf<m)
+                {
+                  mf=m; 
+                  item = arr1[i];
+                }
+        }
+        m=0;
+}
+  document.getElementById("msg").innerHTML += (" arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3] ");
+  document.getElementById("result").innerHTML += (item+" ( " +mf +" times ) ") ;
+}
+
+    </script>
+  </head>
+  <body>
+      <button id="subm" type="button" onclick="mostFrequent()">Result</button>
+      <p id="msg"></p>
+      <h3 id="result"></h3>
+  </body>
+</html>

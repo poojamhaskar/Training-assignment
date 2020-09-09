@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment19</title>
+    <script>
+        function sqr() {
+        function sum_sqr(array) 
+   {        
+  var sum = 0, 
+      i = array.length;
+  while (i--) 
+   sum += Math.pow(array[i], 2);
+  return sum;
+   }
+  document.getElementById("result").innerHTML = (sum_sqr([4, 6, 8, 1])); ;
+
+  }  </script>
+    </head>
+  <body>
+      <button id="subm" type="button" onclick="sqr()">Result</button>
+      <p id="msg"></p>
+      <h3 id="result"></h3>
+
+  </body>
+</html>

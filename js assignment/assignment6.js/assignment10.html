@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment10</title>
+    <script>
+    function check() {
+    var array_Clone_to = function(arra1) {
+    return arra1.slice(0);
+    };
+  document.getElementById("result").innerHTML += (array_Clone_to([4, 5, 9, 10])); 
+
+  document.getElementById("result").innerHTML += (array_Clone_to([43, 4, 6, 8]));
+}
+  </script>
+  </head>
+  <body>
+      <button id="subm" type="button" onclick="check()">Result</button>
+      <h3 id="result"></h3>
+  </body>
+</html>
