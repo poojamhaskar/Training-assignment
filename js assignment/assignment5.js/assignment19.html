@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment19</title>
+  <script>
+    function isError(input) {
+      return input instanceof Error || toString.call(input) === "[object Error]";
+    }
+    function ans() {
+      document.getElementById("q1").innerHTML += " " + isError(new Error("foo"));
+      document.getElementById("q2").innerHTML += " " + isError(100);
+      document.getElementById("q3").innerHTML += " " + isError("foo");
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+    <p id="q1">isError(new Error('foo')) :</p>
+    <p id="q2">isError(100) :</p>
+    <p id="q3">isError('foo') :</p>
+    <button id="subm" type="button" onclick="ans()">See the output</button>
+    <h2 id="result"></h2>
+  </div>
+</body>
+
+</html>
