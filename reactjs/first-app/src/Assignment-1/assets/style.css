@@ -2,6 +2,7 @@
     height: 15vh;
     border: 5px solid red;
     text-align: center;
+    background-color: paleturquoise;
     margin-top:1.2%;
   }
   .header1 h1 {
@@ -12,6 +13,7 @@
     height: 15vh;
     border: 5px solid black;
     text-align: center;
+    background-color: peachpuff;
     margin-top:5%;
   }
   .footer1 h1 {

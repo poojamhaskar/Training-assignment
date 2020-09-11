@@ -1,19 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import '../src/assets/style.css';
-import Formreact from  '../src/component/Formreact'
-import Header from  '../src/common/Header'
-import Footer from  '../src/common/Footer'
+import React from "react";
+import "./App.css";
+import Footer from "../src/Assignment-2/common/Footer";
+import Header from "../src/Assignment-2/common/Header";
+import "../src/Assignment-2/assets/style.css";
 
+import { BrowserRouter } from "react-router-dom";
+import Route from "../src/Assignment-2/component/Route";
 function App() {
   return (
-      <div className="App">
-      <Header/>
-     <Formreact />
-     <Footer/>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Route />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+
