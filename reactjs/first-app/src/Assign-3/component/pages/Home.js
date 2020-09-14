@@ -37,19 +37,19 @@ export default class Home extends Component {
         .required("First name is required"),
       lastName: Yup.string()
         .required("Lastname is required"),
-      userEmail: Yup.string()
+      Email: Yup.string()
         .email("Please enter valid email id")
         .required("Email is required"),
-      userContact: Yup.string()
+      Contact: Yup.string()
         .matches(/^[0-9]+$/, "Mobile number is not valid")
         .min(10, "Contact number must be of 10 digits")
         .max(10, "Contact number must be of 10 digits")
         .required("Contact number is required"),
-      userState: Yup.string()
+      State: Yup.string()
         .required("State name is required"),
-      userCity: Yup.string()
+      City: Yup.string()
         .required("City name is required"),
-      userPincode: Yup.string()
+      Pincode: Yup.string()
         .min(6, "Pincode must have 6 digits")
         .max(6, "Pincode must have 6 digits")
         .matches((/^\d{6}$/), "Must be only 6 digits")
@@ -97,94 +97,94 @@ export default class Home extends Component {
       ) : null}
       <div className="element">
         <div className="label">
-          <label htmlFor="userEmail">Email : </label>
+          <label htmlFor="Email">Email : </label>
         </div>
         <div className="input">
           <input
-            id="userEmail"
-            name="userEmail"
+            id="Email"
+            name="Email"
             type="email"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
-            value={formik.values.userEmail}
+            value={formik.values.Email}
           />
         </div>
       </div>
-      {formik.errors.userEmail && formik.touched.userEmail ? (
-        <div className="error">{formik.errors.userEmail}</div>
+      {formik.errors.Email && formik.touched.Email ? (
+        <div className="error">{formik.errors.Email}</div>
       ) : null}
         <div className="element">
         <div className="label">
-          <label htmlFor="userContact">Contact No : </label>
+          <label htmlFor="Contact">Contact No : </label>
         </div>
         <div className="input">
           <input
-            id="userContact"
-            name="userContact"
+            id="Contact"
+            name="Contact"
             type="text"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
-            value={formik.values.userContact}
+            value={formik.values.Contact}
           />
         </div>
       </div>
-      {formik.errors.userContact && formik.touched.userContact ? (
-        <div className="error">{formik.errors.userContact}</div>
+      {formik.errors.Contact && formik.touched.Contact ? (
+        <div className="error">{formik.errors.Contact}</div>
       ) : null}
 
       <div className="element">
         <div className="label">
-          <label htmlFor="userState">State : </label>
+          <label htmlFor="State">State : </label>
         </div>
         <div className="input">
           <input
-            id="userState"
-            name="userState"
+            id="State"
+            name="State"
             type="text"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
-            value={formik.values.userState}
+            value={formik.values.State}
           />
         </div>
       </div>
-      {formik.errors.userState && formik.touched.userState ? (
-        <div className="error">{formik.errors.userState}</div>
+      {formik.errors.State && formik.touched.State ? (
+        <div className="error">{formik.errors.State}</div>
       ) : null}
       <div className="element">
         <div className="label">
-          <label htmlFor="userCity">City : </label>
+          <label htmlFor="City">City : </label>
         </div>
         <div className="input">
           <input
-            id="userCity"
-            name="userCity"
+            id="City"
+            name="City"
             type="text"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
-            value={formik.values.userCity}
+            value={formik.values.City}
           />
         </div>
       </div>
-      {formik.errors.userCity && formik.touched.userCity ? (
-        <div className="error">{formik.errors.userCity}</div>
+      {formik.errors.City && formik.touched.City ? (
+        <div className="error">{formik.errors.City}</div>
       ) : null}
       <div className="element">
         <div className="label">
-          <label htmlFor="userPincode">Pincode : </label>
+          <label htmlFor="Pincode">Pincode : </label>
         </div>
         <div className="input">
           <input
-            id="userPincode"
-            name="userPincode"
+            id="Pincode"
+            name="Pincode"
             type="text"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
-            value={formik.values.userPincode}
+            value={formik.values.Pincode}
           />
         </div>
       </div>
-      {formik.errors.userPincode && formik.touched.userPincode ? (
-        <div className="error">{formik.errors.userPincode}</div>
+      {formik.errors.Pincode && formik.touched.Pincode ? (
+        <div className="error">{formik.errors.Pincode}</div>
       ) : null}
       <div className="btn">
       <button type="submit">Save</button>
