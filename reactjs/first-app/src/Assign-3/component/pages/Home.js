@@ -64,131 +64,131 @@ export default class Home extends Component {
           <label htmlFor="firstName">First Name : </label>
         </div>
         <div className="input">
-          <input
-            id="firstName"
-            name="firstName"
-            type="text"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.firstName}
-          />
-        </div>
-      </div>
-      {formik.errors.firstName && formik.touched.firstName ? (
-        <div className="error">{formik.errors.firstName}</div>
-      ) : null}
-      <div className="element">
+          <input id="firstName" name="firstName" type="text" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.firstName}
+           />
+           </div>
+         </div>
+         {formik.errors.firstName && formik.touched.firstName ? (
+           <div className="error">{formik.errors.firstName}</div>
+         ) : null}  
+          <div className="element">
         <div className="label">
           <label htmlFor="lastName">Last Name : </label>
         </div>
-        <div className="input">
-          <input
-            id="lastName"
-            name="lastName"
-            type="text"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.lastName}
-          />
-        </div>
-      </div>
-      {formik.errors.lastName && formik.touched.lastName ? (
-        <div className="error">{formik.errors.lastName}</div>
-      ) : null}
-      <div className="element">
+        <div className="input">  
+        <input id="lastName" name="lastName" type="text" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.lastName}
+        />
+           </div>
+         </div>
+         {formik.errors.lastName && formik.touched.lastName ? (
+           <div className="error">{formik.errors.lastName}</div>
+         ) : null}    
+          <div className="element">
         <div className="label">
           <label htmlFor="Email">Email : </label>
         </div>
         <div className="input">
-          <input
-            id="Email"
-            name="Email"
-            type="email"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.Email}
-          />
-        </div>
-      </div>
-      {formik.errors.Email && formik.touched.Email ? (
-        <div className="error">{formik.errors.Email}</div>
-      ) : null}
-        <div className="element">
-        <div className="label">
-          <label htmlFor="Contact">Contact No : </label>
-        </div>
-        <div className="input">
-          <input
-            id="Contact"
-            name="Contact"
-            type="text"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.Contact}
-          />
-        </div>
-      </div>
-      {formik.errors.Contact && formik.touched.Contact ? (
-        <div className="error">{formik.errors.Contact}</div>
-      ) : null}
-
-      <div className="element">
-        <div className="label">
-          <label htmlFor="State">State : </label>
-        </div>
-        <div className="input">
-          <input
-            id="State"
-            name="State"
-            type="text"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.State}
-          />
-        </div>
-      </div>
-      {formik.errors.State && formik.touched.State ? (
-        <div className="error">{formik.errors.State}</div>
-      ) : null}
-      <div className="element">
-        <div className="label">
-          <label htmlFor="City">City : </label>
-        </div>
-        <div className="input">
-          <input
-            id="City"
-            name="City"
-            type="text"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.City}
-          />
-        </div>
-      </div>
-      {formik.errors.City && formik.touched.City ? (
-        <div className="error">{formik.errors.City}</div>
-      ) : null}
-      <div className="element">
-        <div className="label">
-          <label htmlFor="Pincode">Pincode : </label>
-        </div>
-        <div className="input">
-          <input
-            id="Pincode"
-            name="Pincode"
-            type="text"
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-            value={formik.values.Pincode}
-          />
-        </div>
-      </div>
-      {formik.errors.Pincode && formik.touched.Pincode ? (
-        <div className="error">{formik.errors.Pincode}</div>
-      ) : null}
-      <div className="btn">
-      <button type="submit">Save</button>
-      </div>
-    </form>
-  );
-};
+          <input id="Email" name="Email" type="email" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.Email}
+           />
+           </div>
+         </div>
+         {formik.errors.Email && formik.touched.Email ? (
+           <div className="error">{formik.errors.Email}</div>
+         ) : null}
+           <div className="element">
+           <div className="label">
+             <label htmlFor="Contact">Contact No : </label>
+           </div>
+           <div className="input">
+             <input id="Contact" name="Contact" type="text" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.Contact}
+              />
+              </div>
+            </div>
+            {formik.errors.Contact && formik.touched.Contact ? (
+              <div className="error">{formik.errors.Contact}</div>
+            ) : null}
+      
+            <div className="element">
+              <div className="label">
+                <label htmlFor="State">State : </label>
+              </div>
+              <div className="input">
+                <input  id="State"  name="State"  type="text" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.State}
+                 />
+                 </div>
+               </div>
+               {formik.errors.State && formik.touched.State ? (
+                 <div className="error">{formik.errors.State}</div>
+               ) : null}
+               <div className="element">
+                 <div className="label">
+                   <label htmlFor="City">City : </label>
+                 </div>
+                 <div className="input">
+                   <input id="City" name="City" type="text" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.City}
+                     />
+                     </div>
+                   </div>
+                   {formik.errors.City && formik.touched.City ? (
+                     <div className="error">{formik.errors.City}</div>
+                   ) : null} 
+                    <div className="element">
+                 <div className="label">
+                   <label htmlFor="Pincode">Pincode : </label>
+                 </div>
+                 <div className="input"> 
+                 <input id="Pincode" name="Pincode" type="text" onBlur={formik.handleBlur}onChange={formik.handleChange} value={formik.values.Pincode}
+                   />
+                  </div>
+               </div>
+               {formik.errors.Pincode && formik.touched.Pincode ? (
+                 <div className="error">{formik.errors.Pincode}</div>
+               ) : null}   
+                <div className="btn">
+               <button type="submit">Save</button>
+               </div>
+             </form>
+           );
+         };
+         
+      
+          
+            
+            
+            
+            
+            
+         
+      
+            
+            
+            
+            
+                       
+          
+            
+            
+            
+            
+            
+            
+           
+           
+           
+            
+            
+            
+         
+     
+            
+            
+         
+      
+          
+            
+            
+            
+            
+            
+        
+      
