@@ -1,0 +1,26 @@
+.Header {
+    height: 10vh;
+    background-image: linear-gradient(to right,rgb(144, 144, 156), rgb(82, 101, 153));
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.Header-img{
+    margin-top: 15px;
+    margin-left: 0px;
+    height: 55px;
+    width: 55px;
+    margin-right: 600px;
+
+    
+}
+.Header-links{
+    padding-top: 20px;
+    margin-left: 400px;
+}
+.Header-lnk{
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+}
+

@@ -1,0 +1,31 @@
+.Home{
+    height: 80vh;
+    background-image: linear-gradient(to right,rgb(144, 144, 156), rgb(82, 101, 153))
+}
+.element{
+    display: flex;
+}
+.StudentForm{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.label{
+    width: 30%;
+    padding: 6px;
+    text-align: right;
+}
+.input{
+    padding:6px;
+    margin-left: 20px;
+    width: 30px;
+}
+.btn{
+    margin-left: 300px;
+    
+}
+h1{
+    padding-top: 2px;
+    padding-right: 30px;
+    text-align: center;
+}
