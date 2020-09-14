@@ -6,7 +6,6 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
   }
-
   render() {
     return (
       <div className="Home">
@@ -15,12 +14,10 @@ export default class Home extends Component {
             <StudentForm />
             </div>
             </div>
-      
-    );
+      );
+    }
   }
-}
-
-const StudentForm = () => {
+    const StudentForm = () => {
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -171,8 +168,6 @@ const StudentForm = () => {
       {formik.errors.userCity && formik.touched.userCity ? (
         <div className="error">{formik.errors.userCity}</div>
       ) : null}
-
-      
       <div className="element">
         <div className="label">
           <label htmlFor="userPincode">Pincode : </label>
@@ -188,7 +183,6 @@ const StudentForm = () => {
           />
         </div>
       </div>
-      
       {formik.errors.userPincode && formik.touched.userPincode ? (
         <div className="error">{formik.errors.userPincode}</div>
       ) : null}
