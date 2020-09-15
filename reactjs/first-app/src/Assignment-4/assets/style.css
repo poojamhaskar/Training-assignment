@@ -1,0 +1,61 @@
+.header1 {
+    height: 10vh;
+    text-align: center;
+    background-color: mediumblue;
+  }
+  
+  .footer1 {
+    height: 10vh;
+    text-align: center;
+    background-color: blue;
+  }
+  
+  .Col-1 {
+  float: left;
+  height: 80vh;
+  background-color: grey;
+  width: 30%;
+  list-style: none;
+  text-align: center;
+  
+}
+    
+  li {
+    padding: 15px;
+    border-bottom: 2px solid black;
+  }
+  .ehs {
+    height: 80vh;
+    background-color: green;
+    width: 70%;
+    margin-left: 30%;
+    margin-top: 0px;
+    text-decoration: none;
+  }
+  .table,
+td,
+th {
+  text-align: center;
+  margin-top: 5vh;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  width: 80%;
+  height: 20vh;
+}
+td,
+th {
+  text-align: center;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  padding-top: 8px;
+}
+.Home {
+  height: 80vh;
+}
+  
+  

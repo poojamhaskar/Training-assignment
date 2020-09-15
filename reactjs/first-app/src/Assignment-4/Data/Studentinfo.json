@@ -1,0 +1,33 @@
+[
+    {
+      "stud_id": 1,
+      "stud_name": "Pooja",
+      "stud_education": "BCA",
+      "stud_fees": 70.20
+    },
+    {
+      "stud_id": 2,
+      "stud_name": "Radhika",
+      "stud_education": "BCA",
+      "stud_fees": 80.43
+    },
+    {
+      "stud_id": 3,
+      "stud_name": "Sayali",
+      "stud_education": "BCA",
+      "stud_fees": 78.0
+    },
+    {
+      "stud_id": 4,
+      "stud_name": "Harshal",
+      "stud_education": "BCA",
+      "stud_fees": 78.0
+    },
+    {
+      "stud_id": 5,
+      "stud_name": "Shubham",
+      "stud_education": "BCA",
+      "stud_fees": 80.20
+    }
+  ]
+  

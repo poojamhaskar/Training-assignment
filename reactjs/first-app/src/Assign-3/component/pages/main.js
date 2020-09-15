@@ -1,17 +1,17 @@
 import React from "react";
 import "./App.css";
-import Footer from "../src/Assignment-4/common/Footer";
-import Header from "../src/Assignment-4/common/Header";
-import "../src/Assignment-4/assets/style.css";
+import Footer from "./Assign-3/component/common/Footer"
+import Header from "./Assign-3/component/common/Header"
+ 
 
 import { BrowserRouter } from "react-router-dom";
-import Route from "../src/Assignment-4/component/Route";
+import Routing from "./Assign-3/router/Routing";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Route />
+        <Routing />
         <Footer />
       </BrowserRouter>
     </div>
@@ -19,5 +19,3 @@ function App() {
 }
 
 export default App;
-
-

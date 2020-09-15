@@ -1,0 +1,27 @@
+[
+    {
+      "emp_id": 1,
+      "emp_name": "Pooja",
+      "leave_date": "5/09/2020"
+    },
+    {
+      "emp_id": 2,
+      "emp_name": "Sayali",
+      "leave_date": "13/09/2020"
+    },
+    {
+      "emp_id": 3,
+      "emp_name": "Radhika",
+      "leave_date": "14/09/2020"
+    },
+    {
+      "emp_id": 4,
+      "emp_name": "Harshal",
+      "leave_date": "14/09/2020"
+    },
+    {
+      "emp_id": 5,
+      "emp_name": "Rupesh",
+      "leave_date": "16/09/2020"
+    }
+  ]
