@@ -1,0 +1,73 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n1, n2, n3;
+printf("enter 1st no" , n1);
+scanf("%d" , &n1);
+
+printf("enter 2nd no" , n1);
+scanf("%d" , &n2);
+
+printf("enter 3rd no" , n3);
+scanf("%d" , &n3);
+
+
+if((n1<=599 && n1>=259) && (n2<=599 && n2>=259) && (n3<=599 && n3>=259))
+		{
+			printf("All numbers are in range");
+		}
+		else
+		{
+			if(n1<=599 && n1>=259)
+			{
+				printf(" is in range" , +n1);
+                scanf("%d" , +n1);
+			}
+			else
+			{
+				printf(" is not in range" , +n1);
+                scanf("%d" , +n1);
+			}
+		
+			if(n2<=599 && n2>=259)
+			{
+				printf(" is in range" , +n2);
+                scanf("%d" , +n2);
+			}
+			else
+			{
+				printf(" is not in range" , +n2);
+                scanf("%d" , +n2);
+			}
+	   
+			if(n3<=599 && n3>=259)
+			{
+				printf(" is in range" , +n3);
+                scanf("%d" , +n3);
+			}
+			else
+			{
+				printf(" is not in range" , +n3);
+                scanf("%d" , +n3);
+			}
+	  }
+	}
+
+*************OUTPUT****************
+1.
+enter 1st no 270                                                                                                                                       
+enter 2nd no 560                                                                                                                                       
+enter 3rd no 350                                                                                                                                       
+All numbers are in range         
+
+2.
+enter 1st no 230
+enter 2nd no 420
+enter 3rd no 550
+ is not in range
+
+
+***************OUTPUT 2*************
+
+
