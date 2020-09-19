@@ -30,8 +30,8 @@ export default class Leave extends Component {
       </div>
     );
   }
-}    
-          
-          
-       
-        
+}
+
+
+
+

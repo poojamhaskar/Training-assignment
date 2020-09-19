@@ -13,7 +13,7 @@ export default class Rounting extends Component {
                     <Route path="/student" component={Student} />
                     <Route path="/leave" component={Leave} />
                     <Route path="/" component={Home} />
-                    
+
                 </Switch>
             </div>
         )

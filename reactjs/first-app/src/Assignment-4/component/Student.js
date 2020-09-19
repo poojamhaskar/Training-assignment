@@ -7,8 +7,8 @@ export default class Student extends Component {
       <div className="Stud1">
         <div> <Column /> </div>
         <div class="ehs">
-        <h1><b>Student Information</b>{" "}</h1>
-            <table className="table">
+          <h1><b>Student Information</b>{" "}</h1>
+          <table className="table">
             <thead>
               <th>Student-Id</th>
               <th>Student-Name</th>
@@ -33,6 +33,6 @@ export default class Student extends Component {
     );
   }
 }
-        
-          
-        
+
+
+

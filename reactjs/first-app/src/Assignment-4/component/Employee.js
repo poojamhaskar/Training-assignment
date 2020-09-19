@@ -6,9 +6,9 @@ export default class Employee extends Component {
     return (
       <div className="emp1">
         <div><Column /></div>
-        <div class="ehs"> 
-        <h1><b>Employee Information</b>{" "}</h1>
-            <table className="table">
+        <div class="ehs">
+          <h1><b>Employee Information</b>{" "}</h1>
+          <table className="table">
             <thead>
               <th>Employee_Id</th>
               <th>Employee_Name</th>
@@ -31,6 +31,6 @@ export default class Employee extends Component {
     );
   }
 }
-       
-          
-        
+
+
+
